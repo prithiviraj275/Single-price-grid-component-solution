@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root{
+
+--Cyan: hsl(179, 62%, 43%);
+--Bright_Yellow: hsl(71, 73%, 54%);
+--Light_Gray: hsl(204, 43%, 93%);
+--Grayish_Blue: hsl(218, 22%, 67%);
+
+}
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(230, 239, 246);
+    font-family: 'Karla', sans-serif;
+    display: grid;    
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    margin: 20px;
+    min-height: 100vh;
+}
+
+main{    
+    width: 70%;
+
+}
+
+/* Three sections of page */
+section{
+    /* border: 1px solid blue; */
+    /* width: 80%;     */
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+.sec1{
+    background-color: #fff;
+}
+.sec2{
+    background-color: var(--Cyan);
+    color: #fff;
+}
+.sec3{
+    background-color: rgb(74, 190, 189);
+    color: #fff;
+}
+
+div{
+    padding: 10px;
+}
+
+/* section heading  */
+.inside_head1{
+    color: var(--Cyan);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.inside_head2,.inside_head3{
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+/* sec1 para */
+.para11{
+    color: #BFDF32;
+    font-weight: 600;
+}
+.para12{
+    color: #ADB0B7;
+    line-height: 2rem;
+}
+/* sec2 para */
+
+.Bill_para1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.Bill_para1>span{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-left: 20px;
+    color: #F5F5F5;
+}
+.Bill_para2{
+    font-weight: 400;
+}
+
+/* section 2 button */
+.but_signUp{
+    width: 100%;
+    height:3.5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #BFDF32;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* sec3 para */
+.content_para1{
+    line-height:15px;    
+    color: #F5F5F5;
+}
+
+@media screen and (min-width: 600px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* border: 1px solid blue; */
+
+    }
+    .sec1{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    /*.sec2{
+        grid-column-start: 1;
+        
+    } */
+    
+}
